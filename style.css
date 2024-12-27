@@ -4,7 +4,7 @@
 
 
 :root {
-    --off-white: #f8f8f4;
+    --white: #f8f8f4;
     --light-sage-green: #a8b5a2;
     --forest-green: #2d4a36;
 }
@@ -15,8 +15,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--off-white);
-    color: var(--forest-green);
+    background-color: white;
+    color: #000;
 }
 
 html {
@@ -159,7 +159,7 @@ section {
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-    background-color: var(--off-white);
+    background-color: white;
 }
 
 .section-container {
@@ -248,7 +248,7 @@ section {
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
-    border: var(--off-white) 0.1rem solid;
+    border: white 0.1rem solid;
 }
 
 .btn-container {
@@ -315,7 +315,7 @@ section {
 }
 
 .experience-sub-title {
-    color: var(--off-white);
+    color: white;
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -389,7 +389,7 @@ article .icon {
     border-radius: 2rem;
     border: var(--forest-green) 0.1rem solid;
     border-color: var(--light-sage-green);
-    background: rgb(250, 250, 250);
+    background: white;
     margin: 2rem auto;
     padding: 0.5rem;
 }
