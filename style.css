@@ -20,10 +20,12 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-bg);
     color: var(--text-light);
+    overflow: visible;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow: visible;
 }
 
 p {
@@ -162,12 +164,14 @@ section {
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
+    overflow: visible;
     min-height: fit-content;
     background-color: var(--primary-bg);
 }
 
 .section-container {
     display: flex;
+    overflow: visible;
 }
 
 /* PROFILE SECTION */
@@ -428,4 +432,74 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+/* Gradient Background */
+body {
+    background: linear-gradient(135deg, #0c0c0c, #1a1a2e);
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Wavy Background Styles */
+#wavy-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures it's behind all content */
+    overflow: hidden;
+}
+
+#wavy-background svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Animations for Waves */
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes wave-slow {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-15px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#wavy-background path:nth-child(1) {
+    animation: wave 6s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+#wavy-background path:nth-child(2) {
+    animation: wave-slow 8s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+#wavy-background path:nth-child(3) {
+    animation: wave 7s ease-in-out infinite reverse;
+    opacity: 0.6;
+}
+
+#wavy-background path:nth-child(4) {
+    animation: wave-slow 9s ease-in-out infinite reverse;
+    opacity: 0.5;
 }

@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+    <div id="wavy-background">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="none" stroke="url(#gradient1)" stroke-width="2" d="M0,160 C480,280 960,40 1440,160"></path>
+            <path fill="none" stroke="url(#gradient2)" stroke-width="2" d="M0,240 C480,120 960,300 1440,240"></path>
+            <path fill="none" stroke="url(#gradient1)" stroke-width="2" d="M0,80 C480,200 960,-20 1440,80"></path>
+            <path fill="none" stroke="url(#gradient2)" stroke-width="2" d="M0,120 C360,240 1080,40 1440,120"></path>
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#4B0082" />
+                    <stop offset="100%" stop-color="#9400D3" />
+                </linearGradient>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#6A0DAD" />
+                    <stop offset="100%" stop-color="#8A2BE2" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </div>
+    
     <nav id="desktop-nav">
         <div>
             <ul class="nav-links">
